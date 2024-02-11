@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/IrinaOsp/CRUD_API#readme",
   "devDependencies": {
+    "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@webpack-cli/generators": "^3.0.7",
@@ -30,11 +31,14 @@
     "nodemon": "^3.0.3",
     "prettier": "3.2.5",
     "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "dotenv": "^16.4.1"
+    "@types/node": "^20.11.17",
+    "dotenv": "^16.4.1",
+    "uuid": "^9.0.1"
   }
 }
