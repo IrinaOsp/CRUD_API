@@ -1,6 +1,7 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
-import { resolve as _resolve } from "path";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { resolve: _resolve } = require("path");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -32,7 +33,7 @@ const config = {
   target: "node",
 };
 
-export default () => {
+module.exports = () => {
   if (isProduction) {
     config.mode = "production";
   } else {

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon",
-    "start:prod": "webpack --mode production ",
+    "start:prod": "webpack --mode production --node-env=production && node ./dist/bundle.js",
     "start:multi": "nodemon -- --multi-node",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
