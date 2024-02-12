@@ -19,7 +19,8 @@ const server = http.createServer((req, res) => {
     defaultHandler(req, res);
     return;
   }
-  const reqEndpoint = reqUrl.split("/")[2];
+  const reqEndpoint =
+    reqUrl.split("/")[reqUrl.split("/").length - 1] !== "users" ?? null;
   switch (reqMethod) {
     case "GET": {
       if (reqEndpoint) {
